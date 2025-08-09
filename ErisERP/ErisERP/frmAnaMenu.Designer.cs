@@ -28,91 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnUrunler = new MaterialSkin.Controls.MaterialButton();
-            btnTedarikciler = new MaterialSkin.Controls.MaterialButton();
-            btnMusteriler = new MaterialSkin.Controls.MaterialButton();
-            SuspendLayout();
+            this.menuListbox = new MaterialSkin.Controls.MaterialListBox();
+            this.SuspendLayout();
             // 
-            // btnUrunler
+            // menuListbox
             // 
-            btnUrunler.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnUrunler.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnUrunler.Depth = 0;
-            btnUrunler.HighEmphasis = true;
-            btnUrunler.Icon = null;
-            btnUrunler.Location = new Point(30, 115);
-            btnUrunler.Margin = new Padding(4, 6, 4, 6);
-            btnUrunler.MouseState = MaterialSkin.MouseState.HOVER;
-            btnUrunler.Name = "btnUrunler";
-            btnUrunler.NoAccentTextColor = Color.Empty;
-            btnUrunler.Size = new Size(86, 36);
-            btnUrunler.TabIndex = 0;
-            btnUrunler.Text = "Ürünler";
-            btnUrunler.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnUrunler.UseAccentColor = false;
-            btnUrunler.UseVisualStyleBackColor = true;
-            btnUrunler.Click += btnUrunler_Click;
-            // 
-            // btnTedarikciler
-            // 
-            btnTedarikciler.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnTedarikciler.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnTedarikciler.Depth = 0;
-            btnTedarikciler.HighEmphasis = true;
-            btnTedarikciler.Icon = null;
-            btnTedarikciler.Location = new Point(205, 115);
-            btnTedarikciler.Margin = new Padding(4, 6, 4, 6);
-            btnTedarikciler.MouseState = MaterialSkin.MouseState.HOVER;
-            btnTedarikciler.Name = "btnTedarikciler";
-            btnTedarikciler.NoAccentTextColor = Color.Empty;
-            btnTedarikciler.Size = new Size(120, 36);
-            btnTedarikciler.TabIndex = 1;
-            btnTedarikciler.Text = "Tedarikçiler";
-            btnTedarikciler.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnTedarikciler.UseAccentColor = false;
-            btnTedarikciler.UseVisualStyleBackColor = true;
-            btnTedarikciler.Click += btnTedarikciler_Click;
-            // 
-            // btnMusteriler
-            // 
-            btnMusteriler.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnMusteriler.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnMusteriler.Depth = 0;
-            btnMusteriler.HighEmphasis = true;
-            btnMusteriler.Icon = null;
-            btnMusteriler.Location = new Point(396, 115);
-            btnMusteriler.Margin = new Padding(4, 6, 4, 6);
-            btnMusteriler.MouseState = MaterialSkin.MouseState.HOVER;
-            btnMusteriler.Name = "btnMusteriler";
-            btnMusteriler.NoAccentTextColor = Color.Empty;
-            btnMusteriler.Size = new Size(109, 36);
-            btnMusteriler.TabIndex = 2;
-            btnMusteriler.Text = "Müşteriler";
-            btnMusteriler.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnMusteriler.UseAccentColor = false;
-            btnMusteriler.UseVisualStyleBackColor = true;
-            btnMusteriler.Click += btnMusteriler_Click;
+            this.menuListbox.BackColor = System.Drawing.Color.White;
+            this.menuListbox.Depth = 0;
+            this.menuListbox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.menuListbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.menuListbox.Location = new System.Drawing.Point(0, 64);
+            this.menuListbox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.menuListbox.Name = "menuListbox";
+            this.menuListbox.Size = new System.Drawing.Size(250, 564);
+            this.menuListbox.TabIndex = 0;
             // 
             // frmAnaMenu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(537, 222);
-            Controls.Add(btnMusteriler);
-            Controls.Add(btnTedarikciler);
-            Controls.Add(btnUrunler);
-            Name = "frmAnaMenu";
-            Padding = new Padding(3, 80, 3, 3);
-            Text = "ErisERP - Ana Menü";
-            Load += frmAnaMenu_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1131, 628);
+            this.Controls.Add(this.menuListbox);
+            this.IsMdiContainer = true;
+            this.Name = "frmAnaMenu";
+            this.Padding = new System.Windows.Forms.Padding(0, 64, 0, 0);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ErisERP - Ana Menü";
+            this.Load += new System.EventHandler(this.frmAnaMenu_Load);
+            this.ResumeLayout(false);
         }
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialButton btnUrunler;
-        private MaterialSkin.Controls.MaterialButton btnTedarikciler;
-        private MaterialSkin.Controls.MaterialButton btnMusteriler;
+        private MaterialSkin.Controls.MaterialListBox menuListbox;
     }
 }
