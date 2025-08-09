@@ -65,4 +65,5 @@ C:\Users\oktay\source\repos\ErisERP\ErisERP\obj\Debug\net8.0-windows\refint\Eris
 C:\Users\oktay\source\repos\ErisERP\ErisERP\obj\Debug\net8.0-windows\ErisERP.pdb
 C:\Users\oktay\source\repos\ErisERP\ErisERP\obj\Debug\net8.0-windows\ErisERP.genruntimeconfig.cache
 C:\Users\oktay\source\repos\ErisERP\ErisERP\obj\Debug\net8.0-windows\ref\ErisERP.dll
+C:\Users\oktay\source\repos\ErisERP\ErisERP\obj\Debug\net8.0-windows\ErisERP.frmGiris.resources
 C:\Users\oktay\source\repos\ErisERP\ErisERP\bin\Debug\net8.0-windows\MaterialSkin.dll

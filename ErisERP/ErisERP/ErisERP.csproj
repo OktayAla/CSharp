@@ -9,8 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MaterialSkin" Version="0.2.1" />
-    <PackageReference Include="MaterialSkin.2" Version="2.3.1" />
+    <PackageReference Include="MaterialSkin.2.NetCore" Version="2.2.1" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.0" />
   </ItemGroup>
 
